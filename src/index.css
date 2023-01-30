@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+   .h1 {
+      @apply text-[22px] leading-[33px] font-medium
+   }
+   .h2 {
+      @apply text-base font-semibold
+   }
+   .p {
+      @apply text-base
+   }
+   .p2Paragraph {
+      @apply text-[12px] leading-[18px] font-light text-[#969696]
+   }
+   .p2Paragraph_1 {
+      @apply text-base font-medium
+   }
+   .u {
+      @apply underline
+   }
+}
+
+@layer utilities {
+   .centerRow {
+      @apply flex flex-row items-center
+   }
+   .centerColumn {
+      @apply flex flex-col justify-center items-center
+   }
+   .center {
+      @apply flex justify-center items-center
+   }
+   .btn-effect {
+      @apply hover:scale-[1.01] hover:cursor-pointer active:scale-95
+   }
+}
+
+@layer components {
+   .card {
+      @apply absolute bg-white min-w-[15rem] rounded-2xl min-h-[17.938rem] right-0
+   }
+}

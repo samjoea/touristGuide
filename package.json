@@ -1,0 +1,51 @@
+{
+  "name": "touristguidefrontend-web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepare": "husky install",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix --ext .js,.jsx ."
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^4.22.0",
+    "@tanstack/react-query-devtools": "^4.23.0",
+    "axios": "^1.2.3",
+    "jotai": "^1.13.1",
+    "password-validator": "^5.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-geolocated": "^4.0.3",
+    "react-hook-form": "^7.42.1",
+    "react-router-dom": "^6.7.0",
+    "react-toastify": "^9.1.1",
+    "react-transition-group": "^4.4.5"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4",
+    "vite": "^4.0.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,html,css}": "prettier --write",
+    "src/**/*.{js}": "eslint"
+  }
+}
